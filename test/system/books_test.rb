@@ -14,9 +14,9 @@ class BooksTest < ApplicationSystemTestCase
     visit books_url
     click_on "New Book"
 
-    fill_in "Isbn", with: @book.ISBN
     fill_in "Author", with: @book.author
     fill_in "Genre", with: @book.genre
+    fill_in "Isbn", with: @book.isbn
     fill_in "Language", with: @book.language
     fill_in "Language Of Original", with: @book.language_of_original
     fill_in "Place Of Publication", with: @book.place_of_publication
@@ -33,9 +33,9 @@ class BooksTest < ApplicationSystemTestCase
     visit books_url
     click_on "Edit", match: :first
 
-    fill_in "Isbn", with: @book.ISBN
     fill_in "Author", with: @book.author
     fill_in "Genre", with: @book.genre
+    fill_in "Isbn", with: @book.isbn
     fill_in "Language", with: @book.language
     fill_in "Language Of Original", with: @book.language_of_original
     fill_in "Place Of Publication", with: @book.place_of_publication

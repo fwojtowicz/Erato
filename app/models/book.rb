@@ -1,3 +1,3 @@
 class Book < ApplicationRecord
-    validates :ISBN, length: { maximum: 13, minimum: 10}
+    validates :isbn, length: {minimum: 10, maximum: 13 }
 end

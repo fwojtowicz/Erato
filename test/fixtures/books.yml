@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  isbn: MyString
   title: MyString
   author: MyString
-  ISBN: MyString
   publisher: MyString
   publication_year: MyString
   place_of_publication: MyString
@@ -12,9 +12,9 @@ one:
   language: MyString
 
 two:
+  isbn: MyString
   title: MyString
   author: MyString
-  ISBN: MyString
   publisher: MyString
   publication_year: MyString
   place_of_publication: MyString

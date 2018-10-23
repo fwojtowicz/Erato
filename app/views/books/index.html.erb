@@ -5,9 +5,9 @@
 <table>
   <thead>
     <tr>
+      <th>Isbn</th>
       <th>Title</th>
       <th>Author</th>
-      <th>Isbn</th>
       <th>Publisher</th>
       <th>Publication year</th>
       <th>Place of publication</th>
@@ -21,9 +21,9 @@
   <tbody>
     <% @books.each do |book| %>
       <tr>
+        <td><%= book.isbn %></td>
         <td><%= book.title %></td>
         <td><%= book.author %></td>
-        <td><%= book.ISBN %></td>
         <td><%= book.publisher %></td>
         <td><%= book.publication_year %></td>
         <td><%= book.place_of_publication %></td>

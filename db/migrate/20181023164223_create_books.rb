@@ -1,9 +1,9 @@
 class CreateBooks < ActiveRecord::Migration[5.2]
   def change
     create_table :books do |t|
+      t.string :isbn
       t.string :title
       t.string :author
-      t.string :ISBN
       t.string :publisher
       t.string :publication_year
       t.string :place_of_publication
