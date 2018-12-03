@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Erato</title>
+    <title>Erato Home Library</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,10 @@
   </head>
 
   <body>
+  <li><%= link_to "Home", '/static_pages/home' %> </li>
+  <li><%= link_to "Books", '/books' %> </li>
+  <li><%= link_to "Help", '/static_pages/help' %> </li>
+    
     <%= yield %>
   </body>
 </html>
