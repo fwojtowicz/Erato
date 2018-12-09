@@ -1,5 +1,7 @@
 {
   "name": "erato",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "vue-router": "^3.0.2"
+  }
 }

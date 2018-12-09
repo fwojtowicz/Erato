@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
-  get 'static_pages/help'
-  resources :books
-  get 'books/index'
-  root 'static_pages#home'
-  get 'static_pages/home'
-  get 'static_pages/help'
+
+    resources :books do
+      get 'books'  => "books#index"
+      get 'books/:id' => "books#show"
+      post 'books/new' => "books"
+      put 'books/:id' => "books#update"
+      delete 'books/:id' => "books#destroy"
+    end
 end
