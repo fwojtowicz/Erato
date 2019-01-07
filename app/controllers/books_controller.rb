@@ -27,6 +27,7 @@ class BooksController < ApplicationController
 
 
   def update
+    @book =Book.find(params[:id])
     if @book.update(book_params)
       render json: @book
     else
